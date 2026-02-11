@@ -32,7 +32,7 @@ const Header = () => {
       <div className="editorial-container">
         <div className="flex items-center justify-between py-2 border-b border-border text-sm text-muted-foreground">
           <span className="hidden sm:block">Independent Journalism · Trusted Voices</span>
-          <span className="sm:hidden text-xs">UPEBSA Editorial</span>
+          <span className="sm:hidden text-xs">Ubepsa Editorial and press</span>
           <div className="flex items-center gap-3">
             {user ? (
               <>
