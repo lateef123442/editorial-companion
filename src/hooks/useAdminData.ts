@@ -35,6 +35,8 @@ export function useUpdateArticleStatus() {
     onSuccess: () => {
       qc.invalidateQueries({ queryKey: ['admin-articles'] });
       qc.invalidateQueries({ queryKey: ['admin-stats'] });
+      qc.invalidateQueries({ queryKey: ['published-articles'] });
+      qc.invalidateQueries({ queryKey: ['published-article'] });
       toast({ title: 'Article updated' });
     },
     onError: (err: Error) => toast({ title: 'Error', description: err.message, variant: 'destructive' }),
